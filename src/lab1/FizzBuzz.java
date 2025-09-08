@@ -7,16 +7,16 @@ class FizzBuzz {
 
     public static void main(String[] args) {
 
-        i = 1;
+        int i = 1;
         while (i < 100) {
 
             // Find out which numbers divide i.
-            doFizzBuzz();
+            doFizzBuzz(i);
             i ++;
         }
     }
 
-    private static void doFizzBuzz() {
+    private static void doFizzBuzz(int i) {
         boolean divisibleBy3 = i % 3 == 0;
         boolean divisibleBy5 = i % 5 == 0;
 
